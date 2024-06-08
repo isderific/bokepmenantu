@@ -86,7 +86,7 @@ class Doodstream {
              search_term: query,
              per_page: "20"
             },
-            60
+            20
         );
         return data;
     }

@@ -69,7 +69,7 @@ class Doodstream {
                 per_page: per_page.toString(),
                 fld_id: fld_id.toString(),
             },
-            60
+            20
         );
         return data;
     }
@@ -81,8 +81,8 @@ class Doodstream {
 
     async search({ query }: { query: string }) {
         const data = await this.fetch(
-            "/search/videos",
-            { search_term: query },
+            "/file/list",
+            { title: query },
             20
         );
         return data;
